@@ -1,0 +1,10 @@
+介绍了一些通过使用SAM模型来结合之前的东西来做到一个东西
+SAV模型
+yolov8+SAM来达到一个分割
+第一个模块用yolov8来分割出一些框，然后作为prompt输入到SAM中去得到一个分割结果m
+然后用SAM模型中的segment anything，把所有的分割出来，得到一个结果m2
+接着通过比较m跟m2二者之间的交并比，最后达到一个效果
+
+还有用到一个TBD，这个不是很了解
+
+还有一篇论文是Track anything:segment anything meets videos
